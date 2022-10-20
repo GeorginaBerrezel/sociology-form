@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,200;0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <title>Sociology form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Projet Archi x Leve.lle Up</h1>
+            <p id="description" class="description text-center">Nous sommes Faustine et Léa, étudiantes en architecture
+                et nous collaborons avec Georgina pour accompagner l'évolution des sessions Lev'Elle Up.</p>
+            <p>
+                Nous travaillons sur l'appropriation du skatepark suivant les genres et les niveaux et aimerions aboutir
+                à terme (décembre/janvier) à un projet de construction. Il s’agira de travailler sur l’accessibilité du
+                skatepark à tous les niveaux pour aspirer un jour à une réelle mixité.
+            </p>
+            <p>Pour cela, nous réalisons en amont une étude sociologique afin de mieux déterminer les enjeux et les
+                besoins.</p>
+            <p>Vos réponses nous seront très utiles, on vous remercie d'avance !</p>
+            <p>Temps estimé pour répondre au questionnaire : une dizaine de minutes. </p>
+        </header>
+        <form id="survey-form">
+            <!--COORDONNEE-->
+            <div class="header-form">
+                <div class="logo">
+                    <img src="levelleup-logo-blanc.png" alt="logo leve.lle Up">
+                </div>
+                <div class="text-header">
+                    <p>La Lev’Elle Up Sessions change de nom pour LEVE.ELLE UP SESSION</p>
+                    <p>Espace insclusif pour tous les genres qui auraient besoin d'un espace bienveillant afin de
+                        developper vos compétences et vous propulsez dans le milieu.</p>
+                </div>
+            </div>
+            <div class="form-groupTitle">
+                <h2>Tes coordonnées</h2>
+            </div>
+            <div class="container-double">
+                <div class="form-group">
+                    <label id="name-label" for="name"><h3>Prénom</h3></label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Mon prénom"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="age"><h3>Age</h3><span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Mon âge"
+                        required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email"><h3>Email</h3></label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Mon email"
+                    required>
+            </div>
+            <div class="form-group">
+                <h3>De quel genre es-tu ?</h3>
+                <label>
+                    <input name="user-gender" value="femme" type="radio" class="input-radio">Femme
+                </label>
+                <label>
+                    <input name="user-gender" value="homme" type="radio" class="input-radio">Homme
+                </label>
+                <label>
+                    <input name="user-gender" value="non-binaire" type="radio" class="input-radio">Non binaire
+                </label>
+                <label>
+                    <input name="user-gender" value="gender-queer" type="radio" class="input-radio">Gender queer
+                </label>
+                <label>
+                    <input name="user-gender" value="gender-fluid" type="radio" class="input-radio">Gender fluid
+                </label>
+                <label>
+                    <input name="user-gender" value="cisgenre-feminin" type="radio" class="input-radio">Cisgenre
+                    (féminin)
+                </label>
+                <label>
+                    <input name="user-gender" value="cisgenre-masculin" type="radio" class="input-radio">Cisgenre
+                    (masculin)
+                </label>
+                <label>
+                    <input name="user-gender" value="agenre" type="radio" class="input-radio">Agenre
+                </label>
+                <label>
+                    <input name="user-gender" value="transgenre" type="radio" class="input-radio">Transgenre
+                </label>
+            </div>
+            <div class="container-double">
+                <div class="form-group">
+                    <label id="name-label" for="statut-profesionnel"><h3>Statut professionnel</h3></label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="mon statut professionnel"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label id="name-label" for="ville-de-residence"><h3>Ville de résidence</h3></label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Ville de résidence"
+                        required>
+                </div>
+            </div>
+            <!--PRATIQUE PERSONNELLE-->
+            <div class="form-groupTitle">
+                <h2>Pratique personnelle</h2>
+            </div>
+            <div class="form-group">
+                <h3>Quelle sport de glisse fais-tu ?</h3>
+                <label>
+                    <input name="user-practice" value="skate" type="radio" class="input-radio">Skate
+                </label>
+                <label>
+                    <input name="user-practice" value="roller-quad" type="radio" class="input-radio">Roller Quad
+                </label>
+                <label>
+                    <input name="user-practice" value="roller-inline" type="radio" class="input-radio">Roller Inline
+                </label>
+                <label>
+                    <input name="user-practice" value="bmx" type="radio" class="input-radio">BMX
+                </label>
+                <label>
+                    <input name="user-practice" value="trotinette" type="radio" class="input-radio">Trotinette
+                </label>
+                <label>
+                    <input name="user-practice" value="glisse-adapte" type="radio" class="input-radio">Glisse adapté
+                </label>
+            </div>
+            <div class="form-group">
+                <label id="date-label" for="quand-as-tu-commence"><h3>Quand as-tu commencé</h3><span class="clue">(environ mois et
+                        année)</span></label>
+                <input type="date" id="start" name="trip-start" value="2018-07" min="1970-01" max="2023-12">
+            </div>
+            <div class="form-group">
+                <label id="context-label" for="name"><h3>Dans quel context as-tu commencé ?</h3></label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="J'ai commencé..."
+                    required>
+            </div>
+            <div class="form-group">
+                <h3>A quelle fréquence pratiques-tu ?</h3>
+                <label>
+                    <input name="user-timming" value="occasionnellement" type="radio" class="input-radio">Occasionnellement <span class="clue">(à 2 fois par mois)</span>
+                </label>
+                <label>
+                    <input name="user-timming" value="regulierement" type="radio" class="input-radio">Régulièrement <span class="clue">(1 à 2 fois par semaine)</span>
+                </label>
+                <label>
+                    <input name="user-timming" value="tres-regulierement" type="radio" class="input-radio">Très régulièrement <span class="clue">(3 fois ou plus par semaine)</span>
+                </label>
+                <label>
+                    <input name="user-timming" value="plus" type="radio" class="input-radio">Plus
+                </label>
+            </div>
+            <div class="form-group">
+                <h3>Quelle niveau penses-tu avoir ?</h3>
+                <label>
+                    <input name="user-level" value="debutant" type="radio" class="input-radio">Débutant.e
+                </label>
+                <label>
+                    <input name="user-level" value="debutant-avance" type="radio" class="input-radio">Débutant.e avancé.e
+                </label>
+                <label>
+                    <input name="user-level" value="intermediaire" type="radio" class="input-radio">Intermédiaire
+                </label>
+                <label>
+                    <input name="user-level" value="confirme" type="radio" class="input-radio">Confirmé.e
+                </label>
+                <label>
+                    <input name="user-level" value="expert" type="radio" class="input-radio">Expert.e
+                </label>
+            </div>
+            <!--
+                <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="leaner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+                </label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+                </label>
+                <label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved<span class="clue">(check all that apply)</span></p>
+                <label>
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end
+                    Projects
+                </label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end
+                    Projects
+                </label>
+                <label>
+                    <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data
+                    Visualization
+                </label>
+                <label>
+                    <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges
+                </label>
+                <label>
+                    <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Open
+                    Source Community
+                </label>
+                <label>
+                    <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Gitter help
+                    rooms
+                </label>
+                <label>
+                    <input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos
+                </label>
+                <label>
+                    <input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">City Meetups
+                </label>
+                <label>
+                    <input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki
+                </label>
+                <label>
+                    <input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum
+                </label>
+                <label>
+                    <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional
+                    Courses
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    </boby>
+
+</html>
